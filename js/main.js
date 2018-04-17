@@ -8,7 +8,7 @@ $(window).scroll(function() {
 
 function parallax() {
 
-  var wScroll = $(window).scrollTop()
+  let wScroll = $(window).scrollTop()
 
 
   $('.parallax--bg').css('background-position', 'center ' + (wScroll*0.75)+'px');
@@ -21,11 +21,7 @@ function parallax() {
 
 
 
-
-
-
-
-// Links to scroll down
+/* Links to scroll */
 
 $("#About-Me").click(function() {
     $('html, body').animate({
@@ -46,7 +42,3 @@ $("#Contact-Me").click(function() {
     }, 2000);
 });
 
-
-AOS.init({
-  duration: 1200,
-})

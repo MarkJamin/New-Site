@@ -5,9 +5,7 @@
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  
   transition: all ease-inout 250ms;
-  
 }
 
 body {
@@ -104,20 +102,26 @@ p:last-of-type {
 .title {
   font-size: 2.5rem;
   margin-bottom: 1.5em;
-  color: #f6fa00;
-  text-align: center;
+  color: #faf600;
+	text-align: center;
+	text-shadow: -1px -1px 1px #232323;
 }
 
 .title span {
   font-weight: 900;
   display: block;
-  font-size: .9em;
-  color: #fff
+  font-size: 1.1em;
+	color: #ffffff;
+	text-shadow: -3px -1px 2px #232323;
 }
-
 
 .title-cta {
 	margin: 0 0 .8em;
+}
+
+.title-cta span {
+	color: #ffffff;
+	text-shadow: -2px -1px 2px #232323;
 }
 
 .unstyled-list {
@@ -132,6 +136,11 @@ p:last-of-type {
   }
 }
 
+
+.Portfolio-h1 {
+	font-weight: 800;
+}
+
 /* buttons */
 
 .button {
@@ -139,27 +148,30 @@ p:last-of-type {
   font-size: 1.15rem;
   text-decoration: none;
   text-transform: uppercase;
-  border-width: 2px;
+  border-width: 1.5px;
   border-style: solid;
 	padding: .5em 1.75em;
 	cursor: pointer;
-  display: inline-block;
+	display: inline-block;
+	border-radius: 12px;
 }
 
 .button-small {
-	font-size: .7rem;
+	font-size: .9rem;
   font-weight: 700;
 }
 
 .button-accent {
-	color: #00ff6c;
-  border-color: #00ff6c;
+	border-color: #00ff6c;
+	color: #ffffff;
+	text-shadow: -1px -1px 1px #232323;
 }
 
 .button-accent:hover,
 .button-accent:focus {
 	background: #00ff6c;
-	color: #232323;
+	border-color: #00ff6c;
+	color: #ffffff;
 }
 
 .button-dark {
@@ -169,8 +181,9 @@ p:last-of-type {
 
 .button-dark:hover,
 .button-dark:focus {
-	background: #232323;
-	color: #00ff6c;
+	background: #00ff6c;
+	border-color: #232323;
+	color: #232323;
 }
 
 @media (min-width: 60rem) {
@@ -208,13 +221,13 @@ nav a {
 	text-decoration: none;
 	padding: .5em;
 	text-transform: uppercase;
-	color: #fff;
+	color: #ffffff;
 	font-size: .8rem;
 }
 
 nav a:hover,
 nav a:focus {
-	color: #ddd;
+	color: #faf600;
 }
 
 @media (min-width:60rem) {
@@ -231,11 +244,11 @@ nav a:focus {
 =================== */
 
 .home-hero {
-  background-image: url(../img/Hero-Picture-bg.png);
+  background-image: url(../img/Hero-Picture-bg.jpg);
   background-size: cover;
   background-position: center;
   padding: 10em 0;
-  color: rgb(240, 234, 234);
+	color: rgb(240, 234, 234);
 }
 
 @media (min-width: 60rem) {
@@ -250,38 +263,26 @@ nav a:focus {
 	padding: 4em;
 	width: 100vw;
 	margin-left: -3.5%;
-	outline: 2px solid #00ff6c;
+	outline: 2px solid #faf600;
 	outline-offset: -2.5em;
-	color: #FFF;
+	color: #ffffff;
 	position: relative;
 }
 
 .home-about-textbox h1 {
-	color: #00ff6c;
+	color: #faf600;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	top: .75em;
+	top: .95em;
 	background: #232323;
-	padding: 0 .145em;
+	padding: 0 .325em;
 	font-size: 2.5rem;
 }
 
-@media (max-width: 480px) {
-.home-about-textbox h1 {
-	color: #00ff6c;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	top: .75em;
-	background: #232323;
-	padding: 0 .145em;
-	font-size: 1.8rem;
-}
-}
 
 
-@media (min-width: 375px) {
+@media (max-width: 1119px) {
 	h1 {
 		font-size: 2.5rem;
 	}
@@ -293,6 +294,7 @@ nav a:focus {
 	.home-about-textbox h1 {
 		top: -.3em;
 		padding: 0 .325em;
+		font-size: 1.8rem;
 	}
 }
 
@@ -304,9 +306,10 @@ nav a:focus {
 	}
 
 	.home-about {
-		background-image: url(../img/TheMan.png);
+		background-image: url(../img/Hero.jpg);
 		background-repeat: no-repeat;
-    padding-bottom: 15em;
+		padding-bottom: 15em;
+		border-radius: 10%;
 	}
 
 	.home-about-textbox {
@@ -314,7 +317,7 @@ nav a:focus {
 		padding: 7em;
 		outline-offset: -3.75em;
     margin-left: -2.5%;
-    top: -1em;
+    top: -5em;
 		right: -28em;
 		text-align: left;
     box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
@@ -333,7 +336,7 @@ nav a:focus {
 
 .portfolio {
 	margin: 5em 0 2.5em;
-	
+
 }
 
 .port-item {
@@ -351,8 +354,8 @@ nav a:focus {
 	bottom: 0em;
 	left: 0em;
 	right: 0em;
-	color: white;
-	background: rgba(0,0,0,.6);
+	color: #ffffff;
+	background: rgba(0,0,0,.3);
 	padding-bottom: 2em;
 }
 
@@ -376,6 +379,8 @@ nav a:focus {
 
 	.port-desc {
 		transform: translateY(150%);
+		background: rgba(0,0,0,.6);
+		
 	}
 
 	.port-item:hover .port-desc {
@@ -545,7 +550,7 @@ p img {
 =================== */
 
 .cta {
-  background-color: #00ff6c;
+  background-color: #faf600;
   padding: 5em 0em;
 }
 
@@ -555,7 +560,7 @@ p img {
 
 @media (min-width: 60rem) {
   .cta {
-    background-color: #00ff6c;
+    background-color: #faf600;
     padding: 5em 15em;
   }
 }
@@ -604,5 +609,5 @@ footer > ul > li > a {
 footer > ul > li > a:hover,
 footer > ul > li > a:focus {
   background-color: transparent;
-  color: #00ff6c;
+	color: #faf600;
 }
