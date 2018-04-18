@@ -267,6 +267,7 @@ nav a:focus {
 	outline-offset: -2.5em;
 	color: #ffffff;
 	position: relative;
+	text-align: left; 
 }
 
 .home-about-textbox h1 {
@@ -309,7 +310,6 @@ nav a:focus {
 		background-image: url(../img/Hero.jpg);
 		background-repeat: no-repeat;
 		padding-bottom: 15em;
-		border-radius: 10%;
 	}
 
 	.home-about-textbox {
@@ -320,7 +320,7 @@ nav a:focus {
     top: -5em;
 		right: -28em;
 		text-align: left;
-    box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+    box-shadow: 0 0 4em 0 rgba(0,0,0,.9);
 	}
 
 	.home-about-textbox h1 {
