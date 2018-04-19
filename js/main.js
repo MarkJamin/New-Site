@@ -25,8 +25,6 @@ function parallax() {
 
 
 
-// Links to scroll down
-
 $("#About-Me").click(function() {
     $('html, body').animate({
         scrollTop: parseInt($("#AboutMe").offset().top)
