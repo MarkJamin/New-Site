@@ -11,7 +11,8 @@
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  text-align: center;
+	text-align: center;
+	background-color: #ebebebf6;
 }
 
 img {
@@ -100,7 +101,7 @@ p:last-of-type {
 
 
 .title {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   margin-bottom: 1.5em;
   color: #faf600;
 	text-align: center;
@@ -110,7 +111,7 @@ p:last-of-type {
 .title span {
   font-weight: 900;
   display: block;
-  font-size: 1.1em;
+  font-size: 1.0em;
 	color: #ffffff;
 	text-shadow: -3px -1px 2px #232323;
 }
@@ -181,7 +182,7 @@ p:last-of-type {
 
 .button-dark:hover,
 .button-dark:focus {
-	background: #00ff6c;
+	background: #e5ff00;
 	border-color: #232323;
 	color: #232323;
 }
@@ -268,6 +269,7 @@ nav a:focus {
 	color: #ffffff;
 	position: relative;
 	text-align: left; 
+	letter-spacing: 0.01rem;
 }
 
 .home-about-textbox h1 {
@@ -281,11 +283,21 @@ nav a:focus {
 	font-size: 2.5rem;
 }
 
+	.Hero-pic {
+		background-image: url(../img/Hero.jpg);
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 50.5em;
+		right: 50em;
+		border-radius: 30% 30% 30% 30%;
+		box-shadow: 0px 100px 110px -40px rgba(121, 55, 29, 0.719),
+		0px 5px 20px rgba(0, 0, 0, 0.5);
+	}
 
 
-@media (max-width: 69.9375em) {
+@media (max-width: 72.5em) {
 	h1 {
-		font-size: 2.5rem;
+		font-size: 2.1rem;
 	}
 
 	.home-about-textbox {
@@ -296,21 +308,29 @@ nav a:focus {
 	.home-about-textbox h1 {
 		top: -.3em;
 		padding: 0 .325em;
-		font-size: 1.8rem;
+		font-size: 2.0rem;
 	}
 }
 
 
 
-@media (min-width: 70rem) {
+@media (min-width: 60rem) {
 	h1 {
 		font-size: 2.5rem;
 	}
 
 	.home-about {
+		padding-bottom: 25em;
+	}
+
+	.Hero-pic {
 		background-image: url(../img/Hero.jpg);
 		background-repeat: no-repeat;
-		padding-bottom: 15em;
+		position: absolute;
+		top: 5em;
+		right: 30em;
+		border-radius: 30% 30% 30% 30%;
+		box-shadow: 0px 100px 110px -40px rgba(121, 55, 29, 0.719), 0px 5px 20px rgba(0, 0, 0, 0.5);
 	}
 
 	.home-about-textbox {
@@ -321,15 +341,17 @@ nav a:focus {
     top: -5em;
 		right: -28em;
 		text-align: left;
-		letter-spacing: 0.06rem;
 		box-shadow: 0 0 4em 0 rgba(0,0,0,.9);
 	}
 
 	.home-about-textbox h1 {
-		top: -.175em;
+		top: -0.12em;
 		right: 2.5rem;
 		transform: translateX(1);
 	}
+
+
+
 
 }
 
@@ -358,7 +380,7 @@ nav a:focus {
 	right: 0em;
 	color: #ffffff;
 	background: rgba(0,0,0,.3);
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 }
 
 .port-desc p {
@@ -376,7 +398,8 @@ nav a:focus {
 	.port-item {
 		width: 33.3%;
 		overflow: hidden;
-		padding: 1px;
+		padding: 5px;
+		
 	}
 
 	.port-desc {
@@ -552,7 +575,7 @@ p img {
 =================== */
 
 .cta {
-  background-color: #faf600;
+  background-color: #00ff6c;
   padding: 5em 0em;
 }
 
@@ -562,7 +585,7 @@ p img {
 
 @media (min-width: 60rem) {
   .cta {
-    background-color: #faf600;
+    background-color: #00ff6c;
     padding: 5em 15em;
   }
 }
