@@ -36,8 +36,7 @@ footer::after {
 }
 
 
-/* Column system
-=================== */
+/* Column system */
 
 [class^=col-] {
 	width: 100%;
@@ -82,8 +81,7 @@ footer::after {
 
 
 
-/* typography
-============ */
+/* typography */
 
 h1 {
   font-weight: 400;
@@ -101,11 +99,14 @@ p:last-of-type {
 
 
 .title {
-  font-size: 2.0rem;
+	font-weight: 700;
+  font-size: 1.7rem;
   margin-bottom: 1.5em;
   color: #faf600;
 	text-align: center;
-	text-shadow: -1px -1px 1px #232323;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 2),
+							 0px 8px 10px rgba(0, 0, 0, 1),
+							 0px 12px 19px rgba(0, 0, 0, 1);
 }
 
 .title span {
@@ -113,22 +114,40 @@ p:last-of-type {
   display: block;
   font-size: 1.0em;
 	color: #ffffff;
-	text-shadow: -3px -1px 2px #232323;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 3),
+							 0px 8px 13px rgba(0, 0, 0, 1),
+							 0px 18px 23px rgba(0, 0, 0, 1);
 }
 
 .title-cta {
+	color: #fff;
 	margin: 0 0 .8em;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 2),
+							 0px 8px 10px rgba(0, 0, 0, 1),
+							 0px 10px 15px rgba(0, 0, 0, 1);
 }
 
 .title-cta span {
 	color: #ffffff;
-	text-shadow: -2px -1px 2px #232323;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 3),
+		           0px 8px 13px rgba(0, 0, 0, 1),
+							 0px 18px 23px rgba(0, 0, 0, 1);
 }
 
 .unstyled-list {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+}
+
+.Portfolio-h1 {
+	font-weight: 900;
+	display: block;
+	font-size: 3.0em;
+	color: #ffffff;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 3), 
+							 0px 8px 13px rgba(0, 0, 0, 1), 
+							 0px 18px 23px rgba(0, 0, 0, 1);
 }
 
 @media (min-width: 75rem) {
@@ -138,9 +157,6 @@ p:last-of-type {
 }
 
 
-.Portfolio-h1 {
-	font-weight: 800;
-}
 
 /* buttons */
 
@@ -196,8 +212,7 @@ p:last-of-type {
 
 
 
-/* header
-=================== */
+/* header */
 
 header {
 	position: absolute;
@@ -241,8 +256,7 @@ nav a:focus {
 	}
 }
 
-/* hero-home
-=================== */
+/* hero-home */
 
 .home-hero {
   background-image: url(../img/Hero-Picture-bg.jpg);
@@ -290,8 +304,8 @@ nav a:focus {
 		top: 50.5em;
 		right: 50em;
 		border-radius: 30% 30% 30% 30%;
-		box-shadow: 0px 100px 110px -40px rgba(121, 55, 29, 0.719),
-		0px 5px 20px rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 100px 120px -40px rgba(121, 55, 29, 0.719),
+								0px 0px 100px rgba(0, 0, 0, 0.5);
 	}
 
 
@@ -320,7 +334,7 @@ nav a:focus {
 	}
 
 	.home-about {
-		padding-bottom: 25em;
+		padding-bottom: 30em;
 	}
 
 	.Hero-pic {
@@ -330,7 +344,9 @@ nav a:focus {
 		top: 5em;
 		right: 30em;
 		border-radius: 30% 30% 30% 30%;
-		box-shadow: 0px 100px 110px -40px rgba(121, 55, 29, 0.719), 0px 5px 20px rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 100px 110px -40px, 
+							rgba(121, 55, 29, 0.719), 
+							  0px 5px 20px rgba(0, 0, 0, 0.5);
 	}
 
 	.home-about-textbox {
@@ -355,8 +371,7 @@ nav a:focus {
 
 }
 
-/* portfolio
-=================== */
+/* portfolio */
 
 .portfolio {
 	margin: 5em 0 2.5em;
@@ -516,8 +531,7 @@ nav a:focus {
 
 
 
-/* Other Modal Stuff
- * =============================== */
+/* Other Modal Stuff */
 
 /*
 .btn {
@@ -579,14 +593,11 @@ p img {
   padding: 5em 0em;
 }
 
-.title-cta {
-  color: #000000;
-}
 
 @media (min-width: 60rem) {
   .cta {
     background-color: #00ff6c;
-    padding: 5em 15em;
+		padding: 5em 15em;
   }
 }
 
