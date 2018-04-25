@@ -109,7 +109,6 @@ p:last-of-type {
 }
 
 
-
 .title span {
 	font-weight: 700;
 	color: rgb(255, 144, 0);
@@ -121,7 +120,6 @@ p:last-of-type {
 							 0px 8px 13px rgba(0, 0, 0, 1),
 							 0px 18px 23px rgba(0, 0, 0, 1);
 }
-
 
 
 .title-cta {
@@ -182,34 +180,40 @@ p:last-of-type {
 	border-radius: 12px;
 }
 
+
 .button-small {
 	font-size: .9rem;
   font-weight: 700;
 }
 
+
 .button-accent {
-	border-color: #00ff6c;
+	border-color: rgb(255, 144, 0);
 	color: #ffffff;
-	text-shadow: -1px -1px 1px #232323;
+	text-shadow: -1px -1px 5px #232323;
 }
+
 
 .button-accent:hover,
 .button-accent:focus {
-	background: #00ff6c;
-	border-color: #00ff6c;
+	background: rgb(255, 144, 0);
+	border-color: rgb(255, 144, 0);
 	color: #ffffff;
 }
 
+
+
 .button-dark {
-	color: #232323;
-	border-color: #232323;
+	font-weight: 700;
+	color: #ffffff;
+	border-color: rgb(255, 144, 0);
 }
 
 .button-dark:hover,
 .button-dark:focus {
-	background: #e5ff00;
-	border-color: #232323;
-	color: #232323;
+	background: rgb(255, 144, 0);
+	border-color: rgb(255, 144, 0);
+	font-weight: 900;
 }
 
 @media (min-width: 60rem) {
@@ -229,6 +233,9 @@ header {
 	right: 0;
 	margin: 1em;
 }
+
+
+/* nav */
 
 nav ul {
 	margin: 0;
@@ -252,7 +259,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-	color: #faf600;
+	color: rgb(255, 144, 0);
 }
 
 @media (min-width: 60rem) {
@@ -261,7 +268,7 @@ nav a:focus {
 	} */
 
 	nav {
-		float: left;
+		float: right;
 	}
 }
 
@@ -287,7 +294,7 @@ nav a:focus {
 	padding: 4em;
 	width: 100vw;
 	margin-left: -3.5%;
-	outline: 2px solid #faf600;
+	outline: 2px solid #2a52be;
 	outline-offset: -2.5em;
 	color: #ffffff;
 	position: relative;
@@ -296,7 +303,7 @@ nav a:focus {
 }
 
 .home-about-textbox h1 {
-	color: #faf600;
+	color: rgb(255, 144, 0);
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -331,7 +338,7 @@ nav a:focus {
 	.home-about-textbox h1 {
 		top: -.3em;
 		padding: 0 .325em;
-		font-size: 1.9rem;
+		font-size: 1.7rem;
 	}
 }
 
@@ -598,14 +605,14 @@ p img {
 =================== */
 
 .cta {
-  background-color: #00ff6c;
+  background-color: #2a52be;
   padding: 5em 0em;
 }
 
 
 @media (min-width: 60rem) {
   .cta {
-    background-color: #00ff6c;
+    background-color: #2a52be;
 		padding: 5em 15em;
   }
 }
@@ -615,7 +622,7 @@ p img {
 =================== */
 
 footer {
-	background: #232323;
+	background: #52be2a;
 	color: #fff;
 	text-align: center;
   padding: 1em 2em;
@@ -648,11 +655,11 @@ footer > ul > li > a {
   padding: 0.6em 0.6em;
   font-size: 25px;
   font-weight: 300;
-  color: #FFF;
+  color: #ffffff;
 }
 
 footer > ul > li > a:hover,
 footer > ul > li > a:focus {
   background-color: transparent;
-	color: #faf600;
+	color: rgb(255, 144, 0);
 }
