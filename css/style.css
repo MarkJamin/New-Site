@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
 
-
+/* ===== Whole Page ==== */
 * {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -37,7 +37,8 @@ footer::after {
 }
 
 
-/* Column system */
+/* ===== Column system ==== */
+
 
 [class^=col-] {
 	width: 100%;
@@ -81,8 +82,9 @@ footer::after {
 }
 
 
+/* ===== typography ==== */
 
-/* typography */
+
 
 h1 {
   font-weight: 400;
@@ -163,9 +165,9 @@ p:last-of-type {
   }
 }
 
+/* ===== buttons ==== */
 
 
-/* buttons */
 
 .button {
   display: inline-block;
@@ -224,8 +226,8 @@ p:last-of-type {
 
 
 
+/* ===== Header ==== */
 
-/* header */
 
 header {
 	position: absolute;
@@ -235,7 +237,8 @@ header {
 }
 
 
-/* nav */
+/* ===== nav ==== */
+
 
 nav ul {
 	margin: 0;
@@ -272,7 +275,8 @@ nav a:focus {
 	}
 }
 
-/* hero-home */
+/* ===== Title & Hero Pic ==== */
+
 
 .home-hero {
   background-image: url(../img/Hero-Picture-bg.jpg);
@@ -389,7 +393,9 @@ nav a:focus {
 
 }
 
-/* portfolio */
+
+/* ===== Portfolio ==== */
+
 
 .portfolio {
 	margin: 5em 0 2.5em;
@@ -447,8 +453,7 @@ nav a:focus {
 
 
 
-/* Modal
-=================== */
+/* ====== Modal ====== */
 
 
 .modal {
@@ -547,48 +552,6 @@ nav a:focus {
 
 
 
-
-/* Other Modal Stuff */
-
-/*
-.btn {
-  cursor: pointer;
-  background: #27ae60;
-  display: inline-block;
-  padding: .5em 1em;
-  color: #fff;
-  border-radius: 3px;
-}
-
-
-.btn:hover,
-.btn:focus {
-  background: #2ecc71;
-}
-
-
-
-
-.btn:active {
-  background: #27ae60;
-  box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
-}
-
-.btn--blue {
-  background: #2980b9;
-}
-
-.btn--blue:hover,
-.btn--blue:focus {
-  background: #3498db;
-}
-
-.btn--blue:active {
-  background: #2980b9;
-}
-
-*/
-
 p img {
   max-width: auto;
   height: auto;
@@ -602,8 +565,11 @@ p img {
 }
 
 
-/* CTA
-=================== */
+
+
+/* ====== Call to Action aka CTA  ====== */
+
+
 
 .cta {
   background-color: #2a52be;
@@ -619,8 +585,11 @@ p img {
 }
 
 
-/* Footer
-=================== */
+
+
+/* ====== Footer  ====== */
+
+
 
 footer {
 	background: #52be2a;
@@ -664,3 +633,5 @@ footer > ul > li > a:focus {
   background-color: transparent;
 	color: rgb(255, 144, 0);
 }
+
+/* ====== END :3  ====== */
