@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
 
-
+/* ===== Whole Page ==== */
 * {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -11,7 +12,8 @@
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  text-align: center;
+	text-align: center;
+	background-color: #ebebebf6;
 }
 
 img {
@@ -35,8 +37,8 @@ footer::after {
 }
 
 
-/* Column system
-=================== */
+/* ===== Column system ==== */
+
 
 [class^=col-] {
 	width: 100%;
@@ -80,9 +82,9 @@ footer::after {
 }
 
 
+/* ===== typography ==== */
 
-/* typography
-============ */
+
 
 h1 {
   font-weight: 400;
@@ -100,28 +102,41 @@ p:last-of-type {
 
 
 .title {
-  font-size: 2.5rem;
-  margin-bottom: 1.5em;
-  color: #faf600;
-	text-align: center;
-	text-shadow: -1px -1px 1px #232323;
+	font-weight: 900;
+  font-size: 2rem;
+	margin-bottom: 1.5em;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 2),
+							 0px 8px 10px rgba(0, 0, 0, 1),
+							 0px 12px 19px rgba(0, 0, 0, 1);
 }
+
 
 .title span {
-  font-weight: 900;
+	font-weight: 700;
+	color: rgb(255, 144, 0);
+	text-align: center;
+	font-family: 'Audiowide', cursive;
   display: block;
-  font-size: 1.1em;
-	color: #ffffff;
-	text-shadow: -3px -1px 2px #232323;
+  font-size: .7em;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 3),
+							 0px 8px 13px rgba(0, 0, 0, 1),
+							 0px 18px 23px rgba(0, 0, 0, 1);
 }
 
+
 .title-cta {
+	color: #fff;
 	margin: 0 0 .8em;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 2),
+							 0px 8px 10px rgba(0, 0, 0, 1),
+							 0px 10px 15px rgba(0, 0, 0, 1);
 }
 
 .title-cta span {
 	color: #ffffff;
-	text-shadow: -2px -1px 2px #232323;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 3),
+		           0px 8px 13px rgba(0, 0, 0, 1),
+							 0px 18px 23px rgba(0, 0, 0, 1);
 }
 
 .unstyled-list {
@@ -130,18 +145,29 @@ p:last-of-type {
 	list-style-type: none;
 }
 
-@media (min-width: 75rem) {
+.Portfolio-h1 {
+	font-weight: 900;
+	display: block;
+	font-size: 3.0em;
+	color: #ffffff;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 3), 
+							 0px 8px 13px rgba(0, 0, 0, 1), 
+							 0px 18px 23px rgba(0, 0, 0, 1);
+}
+
+@media (min-width: 60rem) {
   .title {
-    font-size: 2.7rem;
+		font-size: 2.7rem;
+		position: absolute;
+		top: 5.75em;
+		right: 1em;
+		font-weight: 700;
   }
 }
 
+/* ===== buttons ==== */
 
-.Portfolio-h1 {
-	font-weight: 800;
-}
 
-/* buttons */
 
 .button {
   display: inline-block;
@@ -156,34 +182,40 @@ p:last-of-type {
 	border-radius: 12px;
 }
 
+
 .button-small {
 	font-size: .9rem;
   font-weight: 700;
 }
 
+
 .button-accent {
-	border-color: #00ff6c;
+	border-color: rgb(255, 144, 0);
 	color: #ffffff;
-	text-shadow: -1px -1px 1px #232323;
+	text-shadow: -1px -1px 5px #232323;
 }
+
 
 .button-accent:hover,
 .button-accent:focus {
-	background: #00ff6c;
-	border-color: #00ff6c;
+	background: rgb(255, 144, 0);
+	border-color: rgb(255, 144, 0);
 	color: #ffffff;
 }
 
+
+
 .button-dark {
-	color: #232323;
-	border-color: #232323;
+	font-weight: 700;
+	color: #ffffff;
+	border-color: rgb(255, 144, 0);
 }
 
 .button-dark:hover,
 .button-dark:focus {
-	background: #00ff6c;
-	border-color: #232323;
-	color: #232323;
+	background: rgb(255, 144, 0);
+	border-color: rgb(255, 144, 0);
+	font-weight: 900;
 }
 
 @media (min-width: 60rem) {
@@ -194,9 +226,8 @@ p:last-of-type {
 
 
 
+/* ===== Header ==== */
 
-/* header
-=================== */
 
 header {
 	position: absolute;
@@ -204,6 +235,10 @@ header {
 	right: 0;
 	margin: 1em;
 }
+
+
+/* ===== nav ==== */
+
 
 nav ul {
 	margin: 0;
@@ -222,26 +257,26 @@ nav a {
 	padding: .5em;
 	text-transform: uppercase;
 	color: #ffffff;
-	font-size: .8rem;
+	font-size: .9rem;
 }
 
 nav a:hover,
 nav a:focus {
-	color: #faf600;
+	color: rgb(255, 144, 0);
 }
 
-@media (min-width:60rem) {
-	.logo {
+@media (min-width: 60rem) {
+/*	.logo {
 		float: left;
-	}
+	} */
 
 	nav {
 		float: right;
 	}
 }
 
-/* hero-home
-=================== */
+/* ===== Title & Hero Pic ==== */
+
 
 .home-hero {
   background-image: url(../img/Hero-Picture-bg.jpg);
@@ -260,56 +295,80 @@ nav a:focus {
 
 .home-about-textbox {
 	background-color: #232323;
-	padding: 4em;
+	padding: 10em;
 	width: 100vw;
 	margin-left: -3.5%;
-	outline: 2px solid #faf600;
+	outline: 2px solid #2a52be;
 	outline-offset: -2.5em;
 	color: #ffffff;
 	position: relative;
 	text-align: left; 
+	letter-spacing: 0.01rem;
 }
 
 .home-about-textbox h1 {
-	color: #faf600;
+	color: rgb(255, 144, 0);
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 	top: .95em;
 	background: #232323;
 	padding: 0 .325em;
-	font-size: 2.5rem;
+	font-size: 2.4rem;
 }
 
+	.Hero-pic {
+		background-image: url(../img/Hero.jpg);
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 50.5em;
+		right: 50em;
+		border-radius: 30% 30% 30% 30%;
+		box-shadow: 0px 100px 190px -20px rgba(121, 55, 29, 0.719),
+								0px 0px 100px rgba(0, 0, 0, 0.5);
+	}
+
+	
 
 
-@media (max-width: 1119px) {
+@media (max-width: 71.5em) {
 	h1 {
-		font-size: 2.5rem;
+		font-size: 2.1rem;
 	}
 
 	.home-about-textbox {
 		padding: 5.5em;
+		font-size: 0.9em;
 	}
 
 	.home-about-textbox h1 {
-		top: -.3em;
+		top: -.2em;
 		padding: 0 .325em;
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
 }
 
 
 
-@media (min-width: 70rem) {
+@media (min-width: 60rem) {
 	h1 {
 		font-size: 2.5rem;
 	}
 
 	.home-about {
+		padding-bottom: 30em;
+	}
+
+	.Hero-pic {
 		background-image: url(../img/Hero.jpg);
 		background-repeat: no-repeat;
-		padding-bottom: 15em;
+		position: absolute;
+		top: 5em;
+		right: 30em;
+		border-radius: 30% 30% 30% 30%;
+		box-shadow: 0px 100px 110px -40px, 
+							rgba(121, 55, 29, 0.719), 
+							  0px 5px 20px rgba(0, 0, 0, 0.5);
 	}
 
 	.home-about-textbox {
@@ -320,19 +379,23 @@ nav a:focus {
     top: -5em;
 		right: -28em;
 		text-align: left;
-    box-shadow: 0 0 4em 0 rgba(0,0,0,.9);
+		box-shadow: 0 0 4em 0 rgba(0,0,0,.9);
 	}
 
 	.home-about-textbox h1 {
-		top: -.175em;
+		top: -0.12em;
 		right: 2.5rem;
 		transform: translateX(1);
 	}
 
+
+
+
 }
 
-/* portfolio
-=================== */
+
+/* ===== Portfolio ==== */
+
 
 .portfolio {
 	margin: 5em 0 2.5em;
@@ -342,6 +405,7 @@ nav a:focus {
 .port-item {
 	margin: 0;
 	position: relative;
+	
 }
 
 .port-item img {
@@ -374,13 +438,12 @@ nav a:focus {
 	.port-item {
 		width: 33.3%;
 		overflow: hidden;
-		padding: 1px;
+		padding: 5px;
 	}
 
 	.port-desc {
 		transform: translateY(150%);
-		background: rgba(0,0,0,.6);
-		
+		background: rgba(0,0,0,.6);	
 	}
 
 	.port-item:hover .port-desc {
@@ -390,8 +453,7 @@ nav a:focus {
 
 
 
-/* Modal
-=================== */
+/* ====== Modal ====== */
 
 
 .modal {
@@ -490,49 +552,6 @@ nav a:focus {
 
 
 
-
-/* Other Modal Stuff
- * =============================== */
-
-/*
-.btn {
-  cursor: pointer;
-  background: #27ae60;
-  display: inline-block;
-  padding: .5em 1em;
-  color: #fff;
-  border-radius: 3px;
-}
-
-
-.btn:hover,
-.btn:focus {
-  background: #2ecc71;
-}
-
-
-
-
-.btn:active {
-  background: #27ae60;
-  box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
-}
-
-.btn--blue {
-  background: #2980b9;
-}
-
-.btn--blue:hover,
-.btn--blue:focus {
-  background: #3498db;
-}
-
-.btn--blue:active {
-  background: #2980b9;
-}
-
-*/
-
 p img {
   max-width: auto;
   height: auto;
@@ -546,31 +565,34 @@ p img {
 }
 
 
-/* CTA
-=================== */
+
+
+/* ====== Call to Action aka CTA  ====== */
+
+
 
 .cta {
-  background-color: #faf600;
+  background-color: #2a52be;
   padding: 5em 0em;
 }
 
-.title-cta {
-  color: #000000;
-}
 
 @media (min-width: 60rem) {
   .cta {
-    background-color: #faf600;
-    padding: 5em 15em;
+    background-color: #2a52be;
+		padding: 5em 15em;
   }
 }
 
 
-/* Footer
-=================== */
+
+
+/* ====== Footer  ====== */
+
+
 
 footer {
-	background: #232323;
+	background: #52be2a;
 	color: #fff;
 	text-align: center;
   padding: 1em 2em;
@@ -603,11 +625,13 @@ footer > ul > li > a {
   padding: 0.6em 0.6em;
   font-size: 25px;
   font-weight: 300;
-  color: #FFF;
+  color: #ffffff;
 }
 
 footer > ul > li > a:hover,
 footer > ul > li > a:focus {
   background-color: transparent;
-	color: #faf600;
+	color: rgb(255, 144, 0);
 }
+
+/* ====== END :3  ====== */

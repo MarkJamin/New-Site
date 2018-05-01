@@ -1,5 +1,4 @@
-/* Parallax Effect =======
-======= About Me Box */
+// The Parallax Textbox //
 
 
 $(window).scroll(function() {
@@ -21,7 +20,9 @@ function parallax() {
 
 
 
-/* Links to scroll */
+// Clickable links for Nav Bar //
+
+
 
 $("#About-Me").click(function() {
     $('html, body').animate({
@@ -42,3 +43,20 @@ $("#Contact-Me").click(function() {
     }, 2000);
 });
 
+
+
+// The fade title & Nav //
+
+
+
+$(document).ready(function () {
+  $('#title-name').hide(0).delay(500).fadeIn(3000);
+});
+
+$(document).ready(function () {
+  $('#title-name span').hide(0).delay(500).fadeIn(4000);
+});
+
+$(document).ready(function () {
+  $('nav').hide(0).delay(500).fadeIn(5000);
+});
