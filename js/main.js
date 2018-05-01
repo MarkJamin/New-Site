@@ -43,6 +43,16 @@ $("#Contact-Me").click(function() {
 });
 
 
+/* Front Title fade in */
 
+$(document).ready(function () {
+  $('#title-name').hide(0).delay(500).fadeIn(3000);
+});
 
+$(document).ready(function () {
+  $('#title-name span').hide(0).delay(500).fadeIn(4000);
+});
 
+$(document).ready(function () {
+  $('nav').hide(0).delay(500).fadeIn(5000);
+});
