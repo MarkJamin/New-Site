@@ -279,9 +279,10 @@ nav a:focus {
 
 
 .home-hero {
-  background-image: url(../img/Hero-Picture-bg.jpg);
+  background-image: url(../img/Sunset-View.jpg);
   background-size: cover;
-  background-position: center;
+	background-position: 70%;
+	background-attachment: fixed;
   padding: 10em 0;
 	color: rgb(240, 234, 234);
 }
@@ -289,7 +290,10 @@ nav a:focus {
 @media (min-width: 60rem) {
   .home-hero {
     height: 100vh;
-    padding-top: 35vh;
+		padding-top: 35vh;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
   }
 }
 
@@ -346,6 +350,8 @@ nav a:focus {
 		padding: 0 .325em;
 		font-size: 1.5rem;
 	}
+
+	
 }
 
 
@@ -419,7 +425,7 @@ nav a:focus {
 	left: 0em;
 	right: 0em;
 	color: #ffffff;
-	background: rgba(0,0,0,.3);
+	background: rgba(0,0,0,.4);
 	padding-bottom: 2em;
 }
 
@@ -431,6 +437,7 @@ nav a:focus {
 	.port-item {
 		width: 50%;
 		float: left;
+		border-radius: 3em;
 	}
 }
 
@@ -443,7 +450,8 @@ nav a:focus {
 
 	.port-desc {
 		transform: translateY(150%);
-		background: rgba(0,0,0,.6);	
+		background: rgba(0,0,0,.6);
+		margin: 0.4em;
 	}
 
 	.port-item:hover .port-desc {
@@ -504,8 +512,9 @@ nav a:focus {
   background: #fff;
   border-radius: 5px;
   padding: 1em 2em;
-  height: 70%;
+  height: 80%;
 }
+
 
 .modal__close {
   position: absolute;
