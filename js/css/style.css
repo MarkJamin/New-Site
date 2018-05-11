@@ -420,12 +420,13 @@ nav a:focus {
 
 .port-desc {
 	position: absolute;
+	margin: 0.4em;
 	z-index: 0;
 	bottom: 0em;
 	left: 0em;
 	right: 0em;
 	color: #ffffff;
-	background: rgba(0,0,0,.4);
+	background: rgba(0,0,0,.2);
 	padding-bottom: 2em;
 }
 
@@ -437,7 +438,6 @@ nav a:focus {
 	.port-item {
 		width: 50%;
 		float: left;
-		border-radius: 3em;
 	}
 }
 
@@ -450,8 +450,7 @@ nav a:focus {
 
 	.port-desc {
 		transform: translateY(150%);
-		background: rgba(0,0,0,.6);
-		margin: 0.4em;
+		background: rgba(0,0,0,.6);	
 	}
 
 	.port-item:hover .port-desc {
@@ -512,7 +511,7 @@ nav a:focus {
   background: #fff;
   border-radius: 5px;
   padding: 1em 2em;
-  height: 80%;
+  height: 70%;
 }
 
 
