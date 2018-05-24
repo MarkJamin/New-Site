@@ -323,7 +323,6 @@ nav a:focus {
 }
 
 	.Hero-pic {
-		background-image: url(../img/Hero.jpg);
 		background-repeat: no-repeat;
 		position: absolute;
 		top: 50.5em;
