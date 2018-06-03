@@ -285,7 +285,6 @@ nav a:focus {
 	background-position: 70%;
 	background-attachment: fixed;
   padding: 10em 0;
-	color: rgb(240, 234, 234);
 }
 
 @media (min-width: 60rem) {
