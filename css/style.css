@@ -282,9 +282,10 @@ nav a:focus {
 
 .home-hero {
   background-image: url(../img/Sunset-View.jpg);
-	background-size: cover;
+  background-size: cover;
 	background-position: 70%;
-	padding: 10em 0;
+	background-attachment: fixed;
+  padding: 10em 0;
 }
 
 @media (min-width: 60rem) {
