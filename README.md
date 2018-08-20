@@ -15,6 +15,4 @@ Languages Used:
 
   - [Personal Website](http://www.markjamin.com)
 
-Thank you for reading enjoy your day!
-
-
+Thank you for reading!
